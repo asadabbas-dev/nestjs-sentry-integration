@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,  // Added this line for better module compatibility
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,  // Allows importing JSON modules
+    "moduleResolution": "node",  // Added to improve module resolution
+    "typeRoots": ["./node_modules/@types", "./src/types"]  // Ensures type definitions are included
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
